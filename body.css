@@ -1,78 +1,60 @@
-body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #4e73df, #1cc88a);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+body > table{
+    width: 80%;
+}
 
-    .login-container {
-        background: #ffffff;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        width: 300px;
-    }
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
 
-    .login-container h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        color: #333;
-    }
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
 
-    .input-group {
-        margin-bottom: 15px;
-    }
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-    .input-group label {
-        display: block;
-        font-size: 14px;
-        margin-bottom: 5px;
-        color: #555;
-    }
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    .input-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 14px;
-    }
+form div.form-action-buttons{
+    text-align: right;
+}
 
-    .input-group input:focus {
-        border-color: #4e73df;
-        outline: none;
-    }
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
 
-    .login-btn {
-        width: 100%;
-        padding: 10px;
-        border: none;
-        background: #4e73df;
-        color: white;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
 
-    .login-btn:hover {
-        background: #294fc4;
-    }
-
-    .extra-links {
-        text-align: center;
-        margin-top: 15px;
-        font-size: 13px;
-    }
-
-    .extra-links a {
-        color: #3254bb;
-        text-decoration: none;
-    }
-
-    .extra-links a:hover {
-        text-decoration: underline;
-    }
+.hide{
+    display:none;
+}
